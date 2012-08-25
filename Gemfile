@@ -27,4 +27,5 @@ group :test do
   gem 'poltergeist'
 end
 
+gem 'slim'
 gem 'jquery-rails'
