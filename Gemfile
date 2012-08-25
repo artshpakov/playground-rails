@@ -33,3 +33,5 @@ gem "twitter-bootstrap-rails"
 gem 'underscore-rails'
 gem 'rails-backbone'
 gem 'devise'
+gem 'rabl'
+gem 'gon'
