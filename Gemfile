@@ -29,3 +29,4 @@ end
 
 gem 'slim'
 gem 'jquery-rails'
+gem "twitter-bootstrap-rails"
