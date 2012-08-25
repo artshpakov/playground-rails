@@ -1,0 +1,21 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: playground_dev
+  pool: 5
+  username: root
+  password:
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: playground_production
+  pool: 5
+  username: root
+  password:
