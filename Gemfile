@@ -32,3 +32,4 @@ gem 'jquery-rails'
 gem "twitter-bootstrap-rails"
 gem 'underscore-rails'
 gem 'rails-backbone'
+gem 'devise'
