@@ -18,3 +18,9 @@ header.navbar.navbar-fixed-top
                 = password_field_tag :password, nil, :placeholder => "Password"
                 br
                 = link_to "Sign in", "javascript:;", :id => "auth-sign-in", :class => "btn btn-primary"
+            div.modal-right-side
+              p Or choose a service from the list
+              div#auth-providers
+                = omniauth_link :twitter
+                = omniauth_link :facebook
+                = omniauth_link :github

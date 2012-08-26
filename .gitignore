@@ -5,3 +5,5 @@ log/*.log
 tmp/
 public/assets/
 .jhw-cache/
+
+config/omniauth.yml

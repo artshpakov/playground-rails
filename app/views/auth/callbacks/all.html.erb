@@ -1,0 +1,11 @@
+<%= include_gon %>
+<script type="text/javascript">
+  var app = window.opener.App;
+
+  if (app && app.auth_view) {
+    app.current_user = gon.current_user;
+    app.auth_view.trigger("signin", gon.current_user);
+  } else window.opener.reload();
+
+  window.close();
+</script>

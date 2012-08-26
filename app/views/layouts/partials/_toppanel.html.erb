@@ -1,0 +1,35 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="#">Playground</a>
+
+      <div id="auth">
+        <div id="auth-handle"></div>
+
+        <div id="auth-modal" class="modal hide fade">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3>Sign in / sign up</h3>
+          </div>
+
+          <div class="modal-body">
+            <div class="modal-left-side">
+              <p>Please fill in your credentials</p>
+              <%= form_tag :sign_in do %>
+                <%= text_field_tag :login, nil, :placeholder => "Login or email" %><br/>
+                <%= password_field_tag :password, nil, :placeholder => "Password" %><br/>
+                <%= link_to "Sign in", "javascript:;", :id => "auth-sign-in", :class => "btn btn-primary" %>
+              <% end %><!--/form-->
+            </div><!--/.modal-left-side-->
+
+            <div class="modal-right-side">
+              <%= link_to 'Twitter', user_omniauth_authorize_path(:twitter), :class => 'popup', :"data-height" => 800, :"data-width" => 700 %>
+              <%= link_to 'Github', user_omniauth_authorize_path(:github), :class => 'popup', :"data-height" => 800, :"data-width" => 700 %>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

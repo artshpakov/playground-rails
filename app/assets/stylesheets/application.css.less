@@ -23,5 +23,21 @@
     #auth-modal {
         width: 480px;
         .modal-right-side { margin-left: 250px; }
+
+        #auth-providers {
+            margin: 30px 0 0 20px;
+
+            .auth-providers-link() {
+                height: 40px; width: 40px;
+                background: url("/images/sprites.png") no-repeat;
+                display: block;
+                margin-right: 16px;
+                float: left;
+                overflow: hidden;
+            }
+            .twitter  { .auth-providers-link; background-position: 0 0; }
+            .facebook { .auth-providers-link; background-position: -40px 0; }
+            .github   { .auth-providers-link; background-position: -80px 0; }
+        }
     }
 }

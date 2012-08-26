@@ -34,5 +34,8 @@ gem "twitter-bootstrap-rails"
 gem 'underscore-rails'
 gem 'rails-backbone'
 gem 'devise'
+gem 'omniauth-twitter'
+gem 'omniauth-github'
+gem 'omniauth-facebook'
 gem 'rabl'
 gem 'gon'

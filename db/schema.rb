@@ -1,4 +1,4 @@
-ActiveRecord::Schema.define(:version => 20120825160458) do
+ActiveRecord::Schema.define(:version => 20120826085529) do
 
   create_table "users", :force => true do |t|
     t.string   "login",               :limit => 15, :null => false
@@ -6,6 +6,8 @@ ActiveRecord::Schema.define(:version => 20120825160458) do
     t.string   "encrypted_password"
     t.datetime "remember_created_at"
     t.datetime "created_at",                        :null => false
+    t.string   "provider",            :limit => 10
+    t.string   "uid",                 :limit => 20
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
