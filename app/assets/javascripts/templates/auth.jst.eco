@@ -1,0 +1,8 @@
+<p>
+  <% if @id: %>
+    signed in as <b><%= @login %></b> |
+    <a href="javascript:;" id="auth-sign-out">sign out</a>
+  <% else: %>
+    <a href="javascript:;" data-toggle="modal" data-target="#auth-modal">Sign in / sign up</a>
+  <% end %>
+</p>

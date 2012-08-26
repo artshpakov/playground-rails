@@ -10,6 +10,7 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
   gem 'less-rails'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'eco'
   gem 'uglifier', '>= 1.0.3'
 end
 

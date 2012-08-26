@@ -2,3 +2,19 @@ header.navbar.navbar-fixed-top
   div.navbar-inner
     div.container
       a.brand href="#" Playground
+
+      div#auth
+        div#auth-handle
+        div#auth-modal.modal.hide.fade
+          div.modal-header
+            button.close type="button" data-dismiss="modal" &times;
+            h3 Sign in / sign up
+          div.modal-body
+            div.modal-left-side
+              p Please fill in your credentials
+              = form_tag :auth do
+                = text_field_tag :login, nil, :placeholder => "Login or email"
+                br
+                = password_field_tag :password, nil, :placeholder => "Password"
+                br
+                = link_to "Sign in", "javascript:;", :id => "auth-sign-in", :class => "btn btn-primary"

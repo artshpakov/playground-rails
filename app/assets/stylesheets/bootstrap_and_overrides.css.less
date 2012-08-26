@@ -21,13 +21,22 @@ body {
 // Font Awesome
 @import "fontawesome";
 
-// Your custom LESS stylesheets goes here
-//
-// Since bootstrap was imported above you have access to its mixins which
-// you may use and inherit here
-//
-// If you'd like to override bootstrap's own variables, you can do so here as well
-// See http://twitter.github.com/bootstrap/less.html for their names and documentation
-//
-// Example:
-// @linkColor: #ff0000;
+.alert {
+    position: fixed;
+    left: 35px; top: 30px;
+    z-index: 1050;
+    box-shadow: 0 4px 7px #ccc;
+}
+
+.modal-backdrop {
+    z-index: 1029;
+}
+.modal-left-side {
+    float: left;
+    border-right: 1px solid #ddd;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+.modal-left-side form, .modal-left-side .btn {
+    margin: 0;
+}
